@@ -18,6 +18,62 @@
     }
 }
 
+@media (max-width: 1080px){
+    .jogos {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 9%;
+        padding: 5px;
+        margin-top: 5%;
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 50%);
+        border-radius: 20px;
+        width: 1000px;
+        height: 720px;
+        box-shadow: 0 0 5px black;
+        transform: translateX(-85px);
+    }
+    
+    .genshin_impact li{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    
+    }
+    
+    .star_rail li{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    
+    .honkai_impact li{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .genshin_impact img{
+        display: block;
+        filter: brightness(2);
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    .star_rail img{
+        width: 180px;
+        display: block;
+    
+    }
+    .honkai_impact img{
+        width: 180px;
+        display: block;
+    
+    }
+}
+
+
 @media (max-width: 1024px){
     .jogos {
         display: flex;
@@ -126,7 +182,6 @@
         display: block;
     
     }
-    
     
     button {
         width: 50px;

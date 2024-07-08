@@ -1,76 +1,103 @@
-@media (max-width: 1280px){
-    body{
-        padding: 0 40px;
-    }
+@media (max-width: 1280px) {
+  body {
+    padding: 0 40px;
+  }
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1020px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .conteudo .jogos {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .jogos{
-        display: block;
-        width: 400px;
-        height: 100%;
+  .botoes_jogos ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    }
+  .jogos {
+    margin-top: 20%;
+  }
 
-    .jogos img{
-        margin-left: 90px;
-        
-    }
-
-    .jogos ul{
-        width: 600px; 
-        
-    }
-
-    .jogos li{
-        width: 50%;
-        margin-left: 50px;
-
-    }
+  .botoes_jogos {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #1b1d2a;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 
-@media (max-width: 768px){
-    .jogos{
-        display: block;
-        width: 400px;
-        height: 100%;
-    }
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .jogos img{
-        margin-left: 90px;
-    }
+  .conteudo .jogos {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .jogos ul{
-        width: 100%; 
-    }
+  .botoes_jogos ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .jogos li{
-        width: 100%;
-        margin-left: 50px;
-    }
+  .jogos {
+    margin-top: 30%;
+  }
+
+  .botoes_jogos {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #1b1d2a;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
 }
+@media (max-width: 425px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media (max-width: 425px){
+  .conteudo .jogos {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .jogos{
-        display: block;
-        width: 310px;
-        height: 100%;
-    }
+  .botoes_jogos ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .jogos img{
-        max-width: 100%; 
-        margin-left: 50px;
-    }
+  .jogos {
+    margin-top: 50%;
+  }
 
-    .jogos ul{
-        width: 100%; 
-    }
-
-    .jogos li{
-        width: 300px; 
-        margin-left: 10px;
-    }
+  .botoes_jogos {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #1b1d2a;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .botoes_jogos img {
+    width: 60px;
+  }
 }

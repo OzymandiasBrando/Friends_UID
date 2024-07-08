@@ -1,20 +1,36 @@
-const botoesCopiar = document.querySelectorAll('[id^="botao-copiar"]');
+document.addEventListener("DOMContentLoaded", function () {
+  const genshinButton = document.getElementById("genshin_button");
+  const starRailButton = document.getElementById("star_rail_button");
+  const honkaiImpactButton = document.getElementById("honkai_impact_button");
+  const zzzButton = document.getElementById("zzz");
 
-botoesCopiar.forEach(botao => {
-    botao.addEventListener('click', () => {
-        
-        const numeroParaCopiar = botao.getAttribute('data-numero');
+  const genshinImpactDiv = document.querySelector(".genshin_impact");
+  const starRailDiv = document.querySelector(".star_rail");
+  const honkaiImpactDiv = document.querySelector(".honkai_impact");
+  const zzzDiv = document.querySelector(".zzz");
 
-        const elementoTemporario = document.createElement('textarea');
-        
-        elementoTemporario.value = numeroParaCopiar;
+  genshinButton.addEventListener("click", function () {
+    toggleActive(genshinImpactDiv);
+  });
 
-        document.body.appendChild(elementoTemporario);
+  starRailButton.addEventListener("click", function () {
+    toggleActive(starRailDiv);
+  });
 
-        elementoTemporario.select();
-        
-        document.execCommand('copy');
+  honkaiImpactButton.addEventListener("click", function () {
+    toggleActive(honkaiImpactDiv);
+  });
 
-        document.body.removeChild(elementoTemporario);
-    });
+  zzzButton.addEventListener("click", function () {
+    toggleActive(zzzDiv);
+  });
+
+  function toggleActive(activeDiv) {
+    genshinImpactDiv.classList.remove("ativo");
+    starRailDiv.classList.remove("ativo");
+    honkaiImpactDiv.classList.remove("ativo");
+    zzzDiv.classList.remove("ativo");
+
+    activeDiv.classList.add("ativo");
+  }
 });

@@ -1,114 +1,91 @@
-body{
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #0C0F1D;
-    color: #e6e5e5;
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #0c0f1d;
+  color: #e6e5e5;
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+.jogos > div {
+  display: none;
 }
 
-.background img{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+.jogos > div.ativo {
+  display: block;
+}
+
+.conteudo {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.conteudo .jogos {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
 }
 
 .jogos {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 15%;
-    padding: 5px;
-    margin-top: 5%;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, 50%);
-    border-radius: 20px;
-    width: 1300px;
-    height: 580px;
-    margin-left: 140px;
-    box-shadow: 0 0 5px black;
+  display: flex;
+  padding: 8px;
+  border: 1px solid black;
+  background-color: #1b1d2a;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px black;
 }
 
-.genshin_impact ul{
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
+.jogos ul {
+  padding: 3px;
 }
 
-.genshin_impact li{
-    display: block;
-    margin-bottom: 5px;
-    font-size: 25px;
-
+.jogos ul li {
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 
-.star_rail ul{
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
+.botoes_jogos {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
 }
 
-.star_rail li{
-    display: block;
-    margin-bottom: 5px;
-    font-size: 25px;
+.botoes_jogos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.honkai_impact ul{
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
+.botoes_jogos button {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
 }
 
-.honkai_impact li{
-    display: block;
-    margin-bottom: 5px;
-    font-size: 25px;
+.botoes_jogos img {
+  width: 100px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
 }
 
-.genshin_impact img{
-    display: block;
-    filter: brightness(2);
-    width: 230px;
-}
-.star_rail img{
-    width: 200px;
-    display: block;
-
-}
-.honkai_impact img{
-    width: 200px;
-    display: block;
-
-}
-
-.nome{
-    color: #0be0e7;
-}
-
-button {
-    width: 60px;
-    margin-left: 10px;
-    background-color: #e6e5e5;
-    color: black;
-    text-transform: uppercase;
-    transition: 0.3s;
-    border: 0px solid;
-    border-radius: 2px;
-    transform: translateY(-25%);
-    cursor: pointer;
-
-}
-
-button:hover {
-    background-color: #b1afaf;
-    transition: 0.3s;
+.botoes_jogos button:hover {
+  transform: scale(1.2);
 }
